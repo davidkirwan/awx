@@ -359,6 +359,13 @@ class InstanceInstanceGroupsList(InstanceGroupMembershipMixin, SubListCreateAtta
     relationship = 'rampart_groups'
 
 
+class CredentialInputSourceList(ListCreateAPIView):
+
+    view_name = _("Credential Input Sources")
+    model = CredentialInputSource
+    serializer_class = CredentialInputSourceSerializer
+
+
 class InstanceGroupList(ListCreateAPIView):
 
     view_name = _("Instance Groups")
